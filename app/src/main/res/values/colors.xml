@@ -3,4 +3,6 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+    <color name="user_bubble">#ebf0f1</color>
+    <color name="bot_bubble">#1b82b3</color>
 </resources>

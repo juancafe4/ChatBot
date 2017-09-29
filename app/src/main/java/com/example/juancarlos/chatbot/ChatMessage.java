@@ -7,12 +7,20 @@ package com.example.juancarlos.chatbot;
 public class ChatMessage {
 
 
-    public String message;
-    public String date;
+    private String message;
+    private String date;
+    private boolean isUser; // Did the user send the message
 
-    public ChatMessage(String message, String date) {
+    public boolean getIsUser() {
+        return isUser;
+    }
+    public void setIsUser(Boolean isUser) {
+        this.isUser = isUser;
+    }
+    public ChatMessage(String message, String date, Boolean isUser) {
         this.message = message;
         this.date = date;
+        this.isUser = isUser;
     }
     public String getMessage() {
         return message;
@@ -22,7 +30,7 @@ public class ChatMessage {
         return date;
     }
 
-    public void setMessage(String message) {\
+    public void setMessage(String message) {
         this.message = message;
     }
 
