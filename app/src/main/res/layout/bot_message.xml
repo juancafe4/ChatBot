@@ -20,13 +20,25 @@
         android:layout_marginStart="16dp"
         android:id="@+id/bubbleLayout">
         <TextView
+            android:id="@+id/bot_body"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
             android:textSize="16dp"
-            android:text="Hola Gaby :)\nEn que te puedo ayudar"
+            android:text="Hola Gaby :)\nEn que te puedo ayudar\n"
             android:textColor="#ffffff"
             tools:layout_editor_absoluteY="0dp"
             tools:layout_editor_absoluteX="0dp" />
+
+        <TextView
+            android:id="@+id/bot_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="17:58"
+            android:textSize="10dp"
+            android:layout_below="@id/bot_body"
+            android:scrollbars="vertical"
+            android:layout_gravity="bottom|end"
+            />
     </com.daasuu.bl.BubbleLayout>
 </LinearLayout>

@@ -1,3 +1,5 @@
+package com.example.juancarlos.chatbot;
+
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -8,11 +10,10 @@ import java.util.ArrayList;
 /**
  * Created by juancarlos on 9/28/17.
  */
-
 public class ChatAdapter extends BaseAdapter {
     private static LayoutInflater inflater = null;
 
-    public ChatAdapter(Activity activity, ArrayList&lt;ChatMessage&gt; list)
+
     @Override
     public int getCount() {
         return 0;
