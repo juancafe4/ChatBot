@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.daasuu.bl.BubbleLayout
+        android:layout_gravity="end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        app:bl_arrowDirection="right"
+        app:bl_arrowHeight="16dp"
+        app:bl_arrowPosition="12dp"
+        app:bl_cornersRadius="10dp"
+        app:bl_arrowWidth="16dp"
+        app:bl_bubbleColor="#ebf0f1"
+        android:id="@+id/bubbleLayout2"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/bubbleLayout"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintRight_toRightOf="parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textSize="16dp"
+            android:text="Hola Fernando <3\nNesecito de tus servicios"
+            android:textColor="#565656"
+            tools:layout_editor_absoluteY="0dp"
+            tools:layout_editor_absoluteX="0dp" />
+    </com.daasuu.bl.BubbleLayout>
+</LinearLayout>

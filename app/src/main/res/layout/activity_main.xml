@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.juancarlos.chatbot.MainActivity">
+
+    <com.daasuu.bl.BubbleLayout
+    android:layout_marginTop="16dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    app:bl_arrowDirection="left"
+    app:bl_arrowHeight="16dp"
+    app:bl_arrowPosition="12dp"
+    app:bl_cornersRadius="16dp"
+    app:bl_arrowWidth="16dp"
+    app:bl_bubbleColor="#1b82b3"
+    android:layout_marginStart="16dp"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    android:id="@+id/bubbleLayout">
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:textSize="16dp"
+    android:text="Hola Gaby :)\nEn que te puedo ayudar"
+    android:textColor="#ffffff"
+    tools:layout_editor_absoluteY="0dp"
+    tools:layout_editor_absoluteX="0dp" />
+    </com.daasuu.bl.BubbleLayout>
+
+    <!--<ListView-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="0dp"-->
+        <!--app:layout_constraintBottom_toTopOf="@+id/linearLayout"-->
+        <!--app:layout_constraintTop_toTopOf="parent"-->
+        <!--app:layout_constraintRight_toRightOf="parent"-->
+        <!--app:layout_constraintLeft_toLeftOf="parent">-->
+
+
+    <!--</ListView>-->
+    <LinearLayout
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="0dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout">
+
+        <EditText
+            android:id="@+id/etSearch"
+            android:hint="@android:string/search_go"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/editext_custom"
+            android:inputType="textMultiLine"
+            android:layout_gravity="bottom"
+            android:textCursorDrawable="@drawable/custom_cursor"
+            />
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_android_send"
+            android:layout_gravity="bottom"
+            android:background="#ECF0F1"
+            />
+
+    </LinearLayout>
+
+    <com.daasuu.bl.BubbleLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        app:bl_arrowDirection="right"
+        app:bl_arrowHeight="16dp"
+        app:bl_arrowPosition="12dp"
+        app:bl_cornersRadius="10dp"
+        app:bl_arrowWidth="16dp"
+        app:bl_bubbleColor="#ebf0f1"
+        android:id="@+id/bubbleLayout2"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/bubbleLayout"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintRight_toRightOf="parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textSize="16dp"
+            android:text="Hola Fernando <3\nNesecito de tus servicios"
+            android:textColor="#565656"
+            tools:layout_editor_absoluteY="0dp"
+            tools:layout_editor_absoluteX="0dp" />
+    </com.daasuu.bl.BubbleLayout>
+
+
+</android.support.constraint.ConstraintLayout>
