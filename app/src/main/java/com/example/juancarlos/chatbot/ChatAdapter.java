@@ -31,8 +31,8 @@ public class ChatAdapter extends BaseAdapter {
     }
 
     @Override
-    public Object getItem(int position) {
-        return position;
+    public ChatMessage getItem(int position) {
+        return chatMessageList.get(position);
     }
 
     @Override
